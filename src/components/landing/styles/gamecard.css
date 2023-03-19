@@ -1,0 +1,41 @@
+.GameCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 400px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+
+.GameCard:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.GameCard:hover .GameCard__Title {
+  transform: translateX(10px);
+}
+
+.GameCard:hover .GameCard__Image {
+  transform: scale(1.1);
+}
+
+.GameCard__Image {
+  flex-grow: 1;
+  background-size: cover;
+  background-position: center center;
+  transition: transform 0.5s ease;
+}
+
+.GameCard__Title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  transition: transform 0.5s ease;
+}
