@@ -1,0 +1,96 @@
+.game-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 300px;
+  height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  margin: 5px;
+  padding: 0 20px;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+}
+
+.game-card-icon {
+  width: 35%;
+  height: 35%px;
+  margin-top: 20px;
+}
+
+.game-card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.game-card-info h3 {
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.game-card-info p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.game-card-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.game-card:hover .game-card-background {
+  opacity: 1;
+}
+
+
+.minecraft-card {
+  background: linear-gradient(to bottom right, #a2ff0b, #1bda8a);
+  color: #fff;
+}
+
+.ark-survival-card {
+  background: linear-gradient(to bottom right, #2C2F1F, #5C7F3E, #9DCB3B);
+  color: #fff;
+}
+
+.rust-card {
+  background: linear-gradient(to bottom right, #FF8C00, #8B4513);
+  color: #fff;
+}
+
+.fivem-card {
+  background: linear-gradient(to bottom right, #ee880c, #e0c10f);
+  color: #fff;
+}
+
+.dayz-card {
+  background: linear-gradient(to bottom right, #8B0000, #242424);
+  color: #fff;
+}
+
+.se-card {
+  background: linear-gradient(to bottom right, #5A2360, #222244);
+  color: #fff;
+}
+
+.fs22-card {
+  background: linear-gradient(to bottom right, #407F44, #6E9C59);
+  color: #fff;
+}
